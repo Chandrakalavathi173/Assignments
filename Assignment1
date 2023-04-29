@@ -1,0 +1,26 @@
+QUESTION-1:
+
+Book1=int(input("Number of books of \"Introduction to Python Programming\" : "))
+Book2=int(input("Number of books of \"Python Libraries cook Book\" : "))
+Book3=int(input("Number of books of \"Data Science in Python\" : "))
+cost_Book1=499.00
+cost_Book2=855.00
+cost_Book3=645.00
+cost_Books=Book1*cost_Book1+Book2*cost_Book2+Book3*cost_Book3
+gst=0.12*cost_Books
+DeliveryCharges=250.00
+total=cost_Books+gst+DeliveryCharges
+print("Total cost = ",total)
+
+----------------------------------------------------------------------------------------------------
+
+QUESTION-2:
+
+string=input("String1 = ")
+string=string.lower()
+output=[]
+for i in range(len(string)):
+    if string[i] not in output:
+        output.append(string[i])
+uniqueLetters=",".join(output)
+print("UniqueLetters = " ,uniqueLetters)
